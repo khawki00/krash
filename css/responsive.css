@@ -1,0 +1,230 @@
+/*====================================
+            Bootstrap Media Queries
+=====================================*/
+
+/* Large Devices (Desktops & Laptops) >= 1200 */
+@media (min-width: 1200px) {
+    /*ok*/
+}
+
+
+
+/* Medium Devices (Landscape Tablets & Medium Desktops) 992-1200 */
+@media (min-width: 992px) and (max-width: 1199px){
+
+    /* Mobile Menu*/
+    .navbar{
+        background: rgba(0,0,0, .7);
+        padding: 0;
+    }
+    .navbar-nav {
+        float: left;
+    }
+    .krash-nav-wrapper{
+        padding: 0;
+    }
+}
+
+/* Small Devices (Portrait Tablets & and Small Desktops) */
+@media (min-width: 768px) and (max-width: 991px){
+    
+    /* Mobile Menu*/
+    .navbar{
+        background: rgba(0,0,0, .7);
+        padding: 0;
+    }
+    .navbar-nav {
+        float: left;
+    }
+    .krash-nav-wrapper{
+        padding: 0;
+    }
+
+    /*About -remove diagnol border */
+    #about-bg-diagonal{
+        border-left: 0;
+        border-top: 0;
+        width: 100%;
+        height: 350px;
+    }
+    #about-content-box{
+        width: 100%;
+        height: 350px;
+    }
+    .course-title{
+        font-size:18px;
+    }
+    .course-description{
+        font-size: 14px;
+    }
+    .price{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        
+    }
+    .price-box:nth-child(even){
+        transform: scale(1);
+        z-index:999;
+    }
+   #pricing > .content-box{
+       padding: 0px;
+   }
+   .testimonial{
+       margin-bottom: 10px;
+   }
+   #footer-copyrights{
+       text-align: center;
+   }
+}
+
+/* Extra small Devices ( Landscape Phones & Portrait Tablets)*/
+@media (max-width: 767px) {
+    .navbar{
+        background: rgba(0,0,0, .7);
+        padding: 0;
+    }
+    .navbar-nav {
+        float: left;
+    }
+    .krash-nav-wrapper{
+        padding: 0;
+    }
+    /*Home*/
+    #home-heading h3{
+        font-size: 30px;
+    }
+    #home-subheading h2{
+        font-size: 24px;
+    }
+    /* buttons */
+    .btn-general{
+        padding: 6px 22px 6px 22px;
+        font-size: 14px;
+    }
+    
+    /*About -remove diagnol border */
+    #about-bg-diagonal{
+        border-left: 0;
+        border-top: 0;
+        width: 100%;
+        height: 350px;
+    }
+    #about-content-box{
+        width: 100%;
+        height: 350px;
+    }
+    /*courses*/
+    /*turns off carousel*/
+    /* .owl-item.cloned{
+        display: none !important;
+      }
+      .owl-stage{
+        transform:none !important;
+        transition: none !important;
+        width: auto !important;
+      }
+      .owl-item{
+        width: auto !important;
+      } */
+    
+    /*testimonial*/
+    .testimonial{
+        display: flex;
+        flex-direction: column;
+    }
+    .testimonial-box i{
+        font-size:30px;
+    }
+    
+    /* pricing*/
+    .price{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        
+    }
+    .price-box{
+        margin: 20px auto;
+    }
+    .price-box:nth-child(even){
+        transform: scale(1);
+        z-index:999;
+    }
+   #pricing > .content-box{
+       padding: 0px;
+   }
+
+   /*footer menu*/
+    #footer-copyrights{
+       text-align: center;
+   }
+
+}
+
+/*Extra Small Devices (Portrait Phones Smaller devices)*/
+@media (max-width:480px){
+ /*courses*/
+ .course-title{
+      font-size:18px;
+    }
+    .course-description{
+         font-size: 14px;
+    }
+    /*pricing*/
+    .price-list ul  {
+       text-align:center;
+       padding: 0;
+      
+      }
+}
+
+/*Extra Small Devices (Smaller devices)*/
+@media (max-width:344px){
+    /*skills*/
+.skill-item-icon i{
+    width:58px;
+    height:58px;
+    padding: 7px;
+    }
+
+    .skill-item-title h3{
+        font-size: 17px;
+    }
+
+    /*courses*/
+ .course-title{
+    font-size:16px;
+  }
+  .course-description{
+       font-size: 10px;
+  }
+  /*pricing*/
+
+    .price{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        
+    }
+    .price-box{
+        margin: 20px auto;
+    }
+    .box h2{
+        font-size: 24px;
+    }
+    .box h4{
+        font-size:26px;
+    }
+    .price-box:nth-child(even){
+        transform: scale(1);
+        z-index:999;
+    }
+   #pricing > .content-box{
+       padding: 0px;
+   }
+  .price-box a  {
+      padding: 16px;
+  }
+  
+}
